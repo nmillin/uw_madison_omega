@@ -99,7 +99,7 @@ h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
  **********************************************************/
 /** Start Mega Menu **/
 
-.megamenu-skin-uw-madison li.megamenu-parent {line-height:25px; height:25px; display:block; float:left; }
+.megamenu-skin-uw-madison li.megamenu-parent {display:block; float:left; }
 
 .megamenu-skin-uw-madison a:hover, .megamenu-skin-uw-madison li.hovering a {  }
 .megamenu-skin-uw-madison a:link, .megamenu-skin-uw-madison a:visited {text-decoration:none; }
@@ -109,10 +109,12 @@ h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
 	font-size:14px;
 	line-height:25px;
 }
-.megamenu-skin-uw-madison li.megamenu-parent {height:25px; border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
+/* start border separating each parent menu item */
+.megamenu-skin-uw-madison li.megamenu-parent {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
 .megamenu-skin-uw-madison li.megamenu-parent.first {border-left:none; }
 .megamenu-skin-uw-madison li.megamenu-parent.last {border-right:none; }
-.megamenu-skin-uw-madison li.megamenu-parent:hover {  /** this is messed up.  need to figure out 15->25px */
+/* end border separating each parent menu item */
+.megamenu-skin-uw-madison li.megamenu-parent:hover {
 	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
 background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
 background-image: -moz-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
@@ -128,6 +130,9 @@ background-image: -webkit-gradient(
 	color-stop(0.87, rgb(239,230,218))
 );
 }
+/* use if you only have 2 lists in the dropdown (visiting campus & research only have 2 columns) */
+.megamenu-skin-uw-madison #megamenu-mlid-547 .megamenu-bin, .megamenu-skin-uw-madison #megamenu-mlid-544 .megamenu-bin {width:400px !important; }
+/* by default you will have the width of the dropdown set for 3 columns.  add the #id to the above selector if you only have 2 */
 .megamenu-skin-uw-madison .megamenu-bin {
 	z-index:-1;
 	padding:10px;
@@ -140,13 +145,6 @@ background-image: -webkit-gradient(
 	-webkit-box-shadow: 3px 3px 4px rgba(60, 60, 60, 0.4);
 	box-shadow: 3px 3px 4px rgba(60, 60, 60, 0.4);
         opacity:0.95;
-}
-.megamenu-skin-uw-madison .megamenu-slot {
-	margin:0 0px 0px 0;
-}
-.megamenu-skin-uw-madison .megamenu-slot-4, .megamenu-skin-uw-madison .megamenu-slot.last {
-	margin-right: 0;
-	border-right:none;
 }
 .megamenu-skin-uw-madison .megamenu-bin {list-style:none; }
 .megamenu-skin-uw-madison .megamenu-slot-title a {
