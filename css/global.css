@@ -36,7 +36,10 @@ ul li.leaf {list-style:none;}
 #region-user-second li a:visited, #region-user-second li a:link {color:white; text-decoration:none; }
 #region-user-second li {float:left; }
 #region-user-second li.first {border-left:none; }
-#region-user-second #block-menu-menu-very-top-menu {float:right; padding-bottom:5px; }/* #block-menu-menu-very-top-menu should be the id of the menu that you placed above the search*/
+
+/* #block-menu-menu-very-top-menu should be the id of the menu that you placed above the search*/
+#region-user-second #block-menu-menu-very-top-menu {float:right; padding-bottom:5px; } /* "add user bar menu id" */
+
 /**End very top nav **/
 
 /** Start branding region **/
