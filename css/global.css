@@ -100,7 +100,9 @@ h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
 	font-size:14px;
 	line-height:25px;
 }
-.megamenu-skin-uw-madison li.megamenu-parent {height:25px;  }
+.megamenu-skin-uw-madison li.megamenu-parent {height:25px; border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
+.megamenu-skin-uw-madison li.megamenu-parent.first {border-left:none; }
+.megamenu-skin-uw-madison li.megamenu-parent.last {border-right:none; }
 .megamenu-skin-uw-madison li.megamenu-parent:hover {  /** this is messed up.  need to figure out 15->25px */
 	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
 background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
@@ -119,8 +121,8 @@ background-image: -webkit-gradient(
 }
 .megamenu-skin-uw-madison .megamenu-bin {
 	z-index:-1;
-	padding:20px;
-	margin-top:-2px;
+	padding:10px;
+	margin-top:-1px;
 	background-color:#F0E7D8;
 	font-size:0.9em;
 	line-height:2em;
@@ -145,6 +147,13 @@ background-image: -webkit-gradient(
         font-family: "Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
         font-size:12px;
 }
+.megamenu-skin-uw-madison .megamenu-slot-title a,.megamenu-skin-uw-madison .megamenu-items li a {padding-left:10px;}
+/** start hover effects for the mega-menu dropdown **/
+.megamenu-skin-uw-madison .megamenu-slot-title:hover {background-color:#D1BD98; }
+.megamenu-skin-uw-madison .megamenu-slot-title:hover a {color:#B70101; }
+.megamenu-skin-uw-madison .megamenu-items li:hover {background-color:#D1BD98; }
+.megamenu-skin-uw-madison .megamenu-items li a:hover,.megamenu-skin-uw-madison .megamenu-slot-title a:hover {text-decoration:none; }
+/** end hover effects for the mega-menu dropdown **/
 /** start the "read more" link **/
 .megamenu-skin-uw-madison .megamenu-slot.last {width:100%;}
 .megamenu-skin-uw-madison .last .megamenu-slot-title {float:right; padding:10px 10px 0 0; }
