@@ -1,0 +1,179 @@
+/* This file will hold the main styles for your website. */
+
+/****** Start Global *****/
+html {
+    background-color: #FFFFFF;
+    background-image: url("../images/bgGradient-main.jpg");
+    background-repeat: repeat-x;
+    color: #000000;
+    font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif
+}
+#page {
+    color: #333333;
+    font: 100%/1.5 "Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
+    
+}
+
+ul li.leaf {list-style:none;}
+/***** End Global *****/
+
+/****** Start Header *****/
+
+/**Start very top nav **/
+#zone-user-wrapper {padding-top:15px; }
+
+#region-user-second li {border-left: 1px solid #A67B3E; display: inline-block; line-height: 1; margin: 0; padding: 0 10px; }
+#region-user-second li a:visited, #region-user-second li a:link {color:white; text-decoration:none; }
+#region-user-second li {float:left; }
+#region-user-second li.first {border-left:none; }
+#region-user-second #block-menu-menu-very-top-menu {float:right; padding-bottom:5px; }/* #block-menu-menu-very-top-menu should be the id of the menu that you placed above the search*/
+/**End very top nav **/
+
+/** Start branding region **/
+
+/* start site-name & slogan */
+h1.site-name a:link, h1.site-name a:visited {color:white; }
+h1.site-name, h6.site-slogan {font-family: "Comic Sans MS, Comic Sans MS5, cursive"; font-weight:100; }
+h1.site-name {font-size:50px; color:white; letter-spacing:2px; margin-top:10px; }
+h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
+.logo-img {display:none; }
+/* end site-name & slogan */
+
+#zone-branding {background-color: #B70101;
+    color: #FFFFFF;
+    height: 90px;
+    position: relative;
+    }
+.logo-img {height: 104px; width: 70px; margin-top:-20px;}
+#zone-branding-wrapper {padding-top:7px; }
+.branding-data {}
+
+/** Start search box **/
+.block-search {padding:0px 0px 10px 0px; margin-bottom:10px; }
+/** End search box **/
+
+/** End branding region **/
+
+/** Start Main Menu **/
+#zone-menu-wrapper {margin-top:10px; }
+#zone-menu {   /** should add CSS3PIE for IE issues...   http://gradients.glrzad.com/**/
+    background-image: linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
+    background-image: -o-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
+    background-image: -moz-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
+    background-image: -webkit-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
+    background-image: -ms-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
+    background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.06, rgb(218,197,162)),
+	color-stop(0.53, rgb(226,210,187)),
+	color-stop(0.87, rgb(232,219,202))
+        );
+    min-height:25px;
+    box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
+    -moz-box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
+    -webkit-box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
+    z-index:6000000;
+    position:relative;
+}
+#region-menu {}
+
+/** other menu css at nice_menu_uw.css **/
+
+/** End Main Menu **/
+
+/**********************************************************
+ * I stopped using the Nice Menu Module after doing some theming.  Nice Menus
+ * doesn't allow for the Mega Menu without a lot of php & js so I will be using
+ * Mega_Menu Module from here on http://www.cmsquickstart.com/blog/drupal-theme-design-tutorial-2-mega-menus
+ **********************************************************/
+/** Start Mega Menu **/
+
+.megamenu-skin-uw-madison li.megamenu-parent {line-height:25px; height:25px; display:block; float:left; }
+
+.megamenu-skin-uw-madison a:hover, .megamenu-skin-uw-madison li.hovering a {  }
+.megamenu-skin-uw-madison a:link, .megamenu-skin-uw-madison a:visited {text-decoration:none; }
+.megamenu-skin-uw-madison .megamenu-parent-title a {
+	color:#b80404;
+	padding:0 10px 0;
+	font-size:14px;
+	line-height:25px;
+}
+.megamenu-skin-uw-madison li.megamenu-parent {height:25px;  }
+.megamenu-skin-uw-madison li.megamenu-parent:hover {  /** this is messed up.  need to figure out 15->25px */
+	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+background-image: -moz-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+background-image: -webkit-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+background-image: -ms-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.06, rgb(229,215,190)),
+	color-stop(0.53, rgb(234,221,204)),
+	color-stop(0.87, rgb(239,230,218))
+);
+}
+.megamenu-skin-uw-madison .megamenu-bin {
+	z-index:-1;
+	padding:20px;
+	margin-top:-2px;
+	background-color:#F0E7D8;
+	font-size:0.9em;
+	line-height:2em;
+	width:600px !important;
+	-moz-box-shadow: 3px 3px 4px rgba(60, 60, 60, 0.4);
+	-webkit-box-shadow: 3px 3px 4px rgba(60, 60, 60, 0.4);
+	box-shadow: 3px 3px 4px rgba(60, 60, 60, 0.4);
+        opacity:0.95;
+}
+.megamenu-skin-uw-madison .megamenu-slot {
+	margin:0 0px 0px 0;
+}
+.megamenu-skin-uw-madison .megamenu-slot-4, .megamenu-skin-uw-madison .megamenu-slot.last {
+	margin-right: 0;
+	border-right:none;
+        
+}
+.megamenu-skin-uw-madison .megamenu-bin {list-style:none; }
+.megamenu-skin-uw-madison .megamenu-slot-title a {
+	color:#000000;
+	font-weight:bold;
+        font-family: "Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
+        font-size:12px;
+}
+/** start the "read more" link **/
+.megamenu-skin-uw-madison .megamenu-slot.last {width:100%;}
+.megamenu-skin-uw-madison .last .megamenu-slot-title {float:right; padding:10px 10px 0 0; }
+.megamenu-skin-uw-madison .last .megamenu-slot-title a {color:#B70101; font-weight:bold; }
+/** end of "read more" link **/
+
+.megamenu-skin-uw-madison .megamenu-items li a {color:#B70101; }
+/** End Mega Menu **/
+/***** End Header *****/
+
+/****** Start Content *****/
+#zone-content {z-index:1; background-color:white; border-right:1px solid black; border-width:1px; border-style:none solid; border-color:#666666; position:relative; }
+
+
+/***** End Content *****/
+
+/****** Start Footer *****/
+/*start first footer */
+#region-footer-first {margin:0; margin-left:-1px; width:100%; border-right:1px solid black; border-width:1px; border-style:none solid; border-color:#666666;
+    background: url("../images/footer_1200.jpg") no-repeat scroll 0 0 #666152; height:200px; }
+#region-footer-first {color:#C8C5BB; }
+#region-footer-first a:visited, #region-footer-first a:link {color:white; }
+/*** add id's of blocks here to float them.  The block that is higher on the Structure > Block page will be farthest left. ***/    
+#block-system-powered-by, #block-block-2 {float:left; padding:10px; padding-right:30px; }
+
+/*end first footer */
+
+/*start second footer */
+#region-footer-second {text-align:center; font-size:11px;}
+#region-footer-second a:visited, #region-footer-second a:link {color:#B70101;}
+/*end second footer */
+/***** End Footer *****/
