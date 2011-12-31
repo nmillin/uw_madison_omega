@@ -1,6 +1,8 @@
 /* This file will hold the main styles for your website. */
 
 /**
+ * Created by Nate Millin (nate.millin@uwc.edu) 12-30-2011
+ * 
  * http://gradients.glrzad.com/ was used to make the gradients.
  * use http://css3pie.com/ to add css3 features for ie6-8
  *
@@ -114,7 +116,7 @@ h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
 .megamenu-skin-uw-madison li.megamenu-parent.first {border-left:none; }
 .megamenu-skin-uw-madison li.megamenu-parent.last {border-right:none; }
 /* end border separating each parent menu item */
-.megamenu-skin-uw-madison li.megamenu-parent:hover {
+.megamenu-skin-uw-madison li.megamenu-parent:hover, .megamenu-skin-uw-madison li.megamenu-parent.active {
 	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
 background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
 background-image: -moz-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
@@ -133,7 +135,7 @@ background-image: -webkit-gradient(
 /* use if you only have 2 lists in the dropdown (visiting campus & research only have 2 columns) */
 .megamenu-skin-uw-madison #megamenu-mlid-547 .megamenu-bin, .megamenu-skin-uw-madison #megamenu-mlid-544 .megamenu-bin {width:400px !important; }
 /* by default you will have the width of the dropdown set for 3 columns.  add the #id to the above selector if you only have 2 */
-.megamenu-skin-uw-madison .megamenu-bin {
+.megamenu-skin-uw-madison .megamenu-bin { /* sets the dropdown box info */
 	z-index:-1;
 	padding:10px;
 	margin-top:-1px;
