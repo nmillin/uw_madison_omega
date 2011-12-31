@@ -1,5 +1,13 @@
 /* This file will hold the main styles for your website. */
 
+/**
+ * http://gradients.glrzad.com/ was used to make the gradients.
+ * use http://css3pie.com/ to add css3 features for ie6-8
+ *
+ * 
+ */
+
+
 /****** Start Global *****/
 html {
     background-color: #FFFFFF;
@@ -33,8 +41,9 @@ ul li.leaf {list-style:none;}
 
 /* start site-name & slogan */
 h1.site-name a:link, h1.site-name a:visited {color:white; }
-h1.site-name, h6.site-slogan {font-family: "Comic Sans MS, Comic Sans MS5, cursive"; font-weight:100; }
-h1.site-name {font-size:50px; color:white; letter-spacing:2px; margin-top:10px; }
+h1.site-name, h6.site-slogan, h2.site-name {font-family: "Comic Sans MS, Comic Sans MS5, cursive"; font-weight:100; }
+h1.site-name, h2.site-name {font-size:50px; color:white; letter-spacing:2px; margin-top:10px; }
+h1.site-name a:link, h1.site-name a:visited, h2.site-name a:link, h2.site-name a:visited {color:white; }
 h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
 .logo-img {display:none; }
 /* end site-name & slogan */
@@ -138,7 +147,6 @@ background-image: -webkit-gradient(
 .megamenu-skin-uw-madison .megamenu-slot-4, .megamenu-skin-uw-madison .megamenu-slot.last {
 	margin-right: 0;
 	border-right:none;
-        
 }
 .megamenu-skin-uw-madison .megamenu-bin {list-style:none; }
 .megamenu-skin-uw-madison .megamenu-slot-title a {
@@ -147,7 +155,7 @@ background-image: -webkit-gradient(
         font-family: "Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
         font-size:12px;
 }
-.megamenu-skin-uw-madison .megamenu-slot-title a,.megamenu-skin-uw-madison .megamenu-items li a {padding-left:10px;}
+.megamenu-skin-uw-madison .megamenu-slot-title a,.megamenu-skin-uw-madison .megamenu-items li a {padding-left:10px;}/*little padding so bg-color:hover will have padding.*/
 /** start hover effects for the mega-menu dropdown **/
 .megamenu-skin-uw-madison .megamenu-slot-title:hover {background-color:#D1BD98; }
 .megamenu-skin-uw-madison .megamenu-slot-title:hover a {color:#B70101; }
@@ -156,8 +164,8 @@ background-image: -webkit-gradient(
 /** end hover effects for the mega-menu dropdown **/
 /** start the "read more" link **/
 .megamenu-skin-uw-madison .megamenu-slot.last {width:100%;}
-.megamenu-skin-uw-madison .last .megamenu-slot-title {float:right; padding:10px 10px 0 0; }
-.megamenu-skin-uw-madison .last .megamenu-slot-title a {color:#B70101; font-weight:bold; }
+.megamenu-skin-uw-madison .megamenu-slot.last .megamenu-slot-title {float:right; padding:0px 10px 0 0; margin-top:10px; }
+.megamenu-skin-uw-madison .megamenu-slot.last .megamenu-slot-title a {color:#B70101; font-weight:bold; }
 /** end of "read more" link **/
 
 .megamenu-skin-uw-madison .megamenu-items li a {color:#B70101; }
