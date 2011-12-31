@@ -33,6 +33,11 @@ to the theme (to get gradients & shadows working) and the IE stylesheet needs to
 Requirements
 -Omega base theme (drupal.org/project/omega) installed and enabled
 -MegaMenu to use the dropdowns (http://drupal.org/project/megamenu)
+      -You will find the css started for using the Nice_menus module and the nice_menus.css.
+      In a nice_menu issue (http://drupal.org/node/973500) the maintainer said that they wouldn't add the functionality
+      for the bigger dropdown menu as used in the wisc.edu site.  If you want to use
+      the nice menu module there is a start for you.  The nav does require MegaMenu to
+      have the hover effects & more to work.  
 
 Recommended Modules -- will make your life easier
 -Admin Menu (drupal.org/project/admin_menu)
