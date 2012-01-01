@@ -28,6 +28,8 @@ Usage Stats:
 *******
 Please note that this theme hasn't been IE tested yet.  CSS3PIE needs to be added
 to the theme (to get gradients & shadows working) and the IE stylesheet needs to be added to.
+
+-update 1/1/2012 -- I have added two skins for blocks.  You can see the screenshot at http://www.flickr.com/photos/55453037@N08/6614486559/in/photostream
 *********
 
 Requirements
@@ -129,6 +131,9 @@ Future Devolopment for the UW_Madison_Omega Theme:
 -Add some CSS to the Content Region (nothing there right now)
       -Create some "skins" for when you create a block you are able to add the #id to
             the css and get the styles from it
+      -**update** I have added 2 css skins.  you just need to add the block #id to the
+            the global.css.  They are "red ul links widget skin" & "quick facts skin".
+            You will find them in the "Content" section of the stylesheet.
 -Demo this at a Meetup
 -Drink beer
 

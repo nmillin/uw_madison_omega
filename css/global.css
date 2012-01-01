@@ -18,10 +18,9 @@ html {
     color: #000000;
     font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif
 }
-#page {
+#page, #page h2, #page h3, #page h4, #page h5, #page h6 {
     color: #333333;
     font: 100%/1.5 "Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
-    
 }
 
 ul li.leaf {list-style:none;}
@@ -178,6 +177,22 @@ background-image: -webkit-gradient(
 /****** Start Content *****/
 #zone-content {z-index:1; background-color:white; border-right:1px solid black; border-width:1px; border-style:none solid; border-color:#666666; position:relative; }
 
+/* Start quick facts skin as scean http://www.wisc.edu/academics/ */
+#block-block-3 {background-color:#F1EDE7; width:275px; border: 1px solid #C9AB80; margin-bottom:10px;
+    border-radius: 6px; 
+    -moz-border-radius: 6px; 
+    -webkit-border-radius: 6px;  }
+#block-block-3 .content {padding-left: 20px; }
+#block-block-3 h2 {line-height:1; font-size:14px; background-color:#C9AB80; color:#FFFFFF; padding:7px 5px 5px 20px; text-transform:uppercase; margin-bottom:15px; font-weight:bold; }
+/* End quick facts skin */
+
+/* Start red ul links widget skin (RESOURCES widget scean http://www.wisc.edu/academics/) */
+#block-block-4 {width:290px;  }
+#block-block-4 .content a:hover {text-decoration:underline; }
+#block-block-4 .content a {color:#B70101; text-decoration:none;}
+#block-block-4 .content li {color:#C9AB80; margin-left:35px; margin-bottom:.75em; line-height:1.2;}
+#block-block-4 h2 {background-color:#B70101; color:#FFFFFF; line-height:2; margin-bottom:15px; text-transform:uppercase; padding-left:20px; font-weight:bold; }
+/* End red ul links widget skin */
 
 /***** End Content *****/
 
