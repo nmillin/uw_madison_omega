@@ -16,11 +16,11 @@ html {
     background-image: url("../images/bgGradient-main.jpg");
     background-repeat: repeat-x;
     color: #000000;
-    font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif
+    font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
 }
-#page, #page h2, #page h3, #page h4, #page h5, #page h6 {
+body, body h2, body h3, body h4, body h5, body h6 {
     color: #333333;
-    font: 100%/1.5 "Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
+    font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
 }
 
 ul li.leaf {list-style:none;}
