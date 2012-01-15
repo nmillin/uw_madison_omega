@@ -13,7 +13,7 @@
 /****** Start Global *****/
 html {
     background-color: #FFFFFF;
-    background-image: url("../images/bgGradient-main.jpg");
+    /*background-image: url("../images/bgGradient-main.jpg");/*Removed so using CSS3 for the background*/
     background-repeat: repeat-x;
     color: #000000;
     font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
@@ -27,6 +27,17 @@ ul li.leaf {list-style:none;}
 /***** End Global *****/
 
 /****** Start Header *****/
+header {
+    background: #9a0002;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9a0002), to(#670003));
+background: -webkit-linear-gradient(#9a0002, #670003);
+background: -moz-linear-gradient(#9a0002, #670003);
+background: -ms-linear-gradient(#9a0002, #670003);
+background: -o-linear-gradient(#9a0002, #670003);
+background: linear-gradient(#9a0002, #670003);
+-pie-background: linear-gradient(#9a0002, #670003);
+behavior: url(/PIE.htc); /* this needs to have the path be corrected */
+}
 
 /**Start very top nav **/
 #zone-user-wrapper {padding-top:15px; }
@@ -68,8 +79,18 @@ h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
 /** End branding region **/
 
 /** Start Main Menu **/
-#zone-menu-wrapper {margin-top:10px; }
-#zone-menu {   /** should add CSS3PIE for IE issues...   http://gradients.glrzad.com/**/
+#zone-menu-wrapper {margin-top:10px;
+background: #AC0608;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#AC0608), to(#ab0907));
+background: -webkit-linear-gradient(#AC0608, #ab0907);
+background: -moz-linear-gradient(#AC0608, #ab0907);
+background: -ms-linear-gradient(#AC0608, #ab0907);
+background: -o-linear-gradient(#AC0608, #ab0907);
+background: linear-gradient(#AC0608, #ab0907);
+-pie-background: linear-gradient(#AC0608, #ab0907);
+behavior: url(/PIE.htc);  /* this needs to have the path be corrected */
+}
+#zone-menu {   /** should add CSS3PIE for IE issues...   http://gradients.glrzad.com/.  Not sure how this will work w/ CSS3Pie.  It uses Hex instead of rgb**/
     background-image: linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
     background-image: -o-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
     background-image: -moz-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
@@ -175,6 +196,17 @@ background-image: -webkit-gradient(
 /***** End Header *****/
 
 /****** Start Content *****/
+#zone-content-wrapper {
+    background: #e9e7db;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e9e7db), to(#ffffff));
+background: -webkit-linear-gradient(#e9e7db, #ffffff);
+background: -moz-linear-gradient(#e9e7db, #ffffff);
+background: -ms-linear-gradient(#e9e7db, #ffffff);
+background: -o-linear-gradient(#e9e7db, #ffffff);
+background: linear-gradient(#e9e7db, #ffffff);
+-pie-background: linear-gradient(#e9e7db, #ffffff);
+behavior: url(/PIE.htc);
+}
 #zone-content {z-index:1; background-color:white; border-right:1px solid black; border-width:1px; border-style:none solid; border-color:#666666; position:relative; }
 
 /* Start quick facts skin as scean http://www.wisc.edu/academics/ */
