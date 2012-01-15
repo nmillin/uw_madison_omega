@@ -15,6 +15,7 @@
 Created By:             Nate Millin
 Created Date:           12/30/2011
 Twitter:                nmillin
+D.org:                  nmillin
 
 Informational:  
 Documentation:  
@@ -30,6 +31,7 @@ Please note that this theme hasn't been IE tested yet.  CSS3PIE needs to be adde
 to the theme (to get gradients & shadows working) and the IE stylesheet needs to be added to.
 
 -update 1/1/2012 -- I have added two skins for blocks.  You can see the screenshot at http://www.flickr.com/photos/55453037@N08/6614486559/in/photostream
+-update 1/15/2012 -- I have added CSS3 for the background gradients.  Now you don't have to adjust the padding so everything lines up.
 *********
 
 Requirements
@@ -45,7 +47,11 @@ Recommended Modules -- will make your life easier
 -Admin Menu (drupal.org/project/admin_menu)
 -Module Filter (drupal.org/project/module_filter)
 
-After you have installed the module & themes (Omega & UW_Madison_Omega) the theme will be a little out of wack.
+Modules for Production with Omega
+-Context -- Allows you to have conditions & reactions to determine block placement & delta.
+-Delta -- Allows you to save a Omega Zone & Region Configuration and then can set it for different Conditions using the Context Module.
+
+After you have installed the module & themes (Omega & UW_Madison_Omega) the theme will be a little out of wack.  /** update 1/15 - this should now line up correctly w/o extra padding **/
 This is because you need to add a menu to the very top of the page or add some extra CSS padding.
 
 -Add a Menu Block to the User Bar Second (make sure the title is set to <none>)
@@ -134,7 +140,11 @@ Future Devolopment for the UW_Madison_Omega Theme:
       -**update** I have added 2 css skins.  you just need to add the block #id to the
             the global.css.  They are "red ul links widget skin" & "quick facts skin".
             You will find them in the "Content" section of the stylesheet.
--Demo this at a Meetup
+-Demo this at a Meetup (doing so 2/7/12)
 -Drink beer
 
 Any thoughts/ideas???
+
+
+
+
