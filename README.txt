@@ -32,6 +32,9 @@ to the theme (to get gradients & shadows working) and the IE stylesheet needs to
 
 -update 1/1/2012 -- I have added two skins for blocks.  You can see the screenshot at http://www.flickr.com/photos/55453037@N08/6614486559/in/photostream
 -update 1/15/2012 -- I have added CSS3 for the background gradients.  Now you don't have to adjust the padding so everything lines up.
+-update 1/20/2012 -- Lauren mentioned that it would be nice if the default behavior would be for the menu to be styled like wisc.edu without
+      requiring the Mega Menu Module.  I made that the default behavior.  If you want the Mega Menu, just comment out the section of code
+      at the bottom of Global.css (you can't miss it).
 *********
 
 Requirements
@@ -41,7 +44,8 @@ Requirements
       In a nice_menu issue (http://drupal.org/node/973500) the maintainer said that they wouldn't add the functionality
       for the bigger dropdown menu as used in the wisc.edu site.  If you want to use
       the nice menu module there is a start for you.  The nav does require MegaMenu to
-      have the hover effects & more to work.  
+      have the hover effects & more to work.
+      --**update 1/20/12** - this module isn't required if you don't want a dropdown.  
 
 Recommended Modules -- will make your life easier
 -Admin Menu (drupal.org/project/admin_menu)
@@ -71,6 +75,7 @@ This is because you need to add a menu to the very top of the page or add some e
       -Go to Structure > Blocks and you will see a block created by MegaMenu
             -"Megamenu - Main menu" because I checked Main Menu
       -Assign the block to the Menu Region.
+      -Go to the bottom of Global.css and comment out the code for the default menu behavior.
       -Add a bunch of links to the Menu
             ex. Main Menu
               ADMISSIONS
