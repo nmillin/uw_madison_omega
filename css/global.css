@@ -244,3 +244,49 @@ behavior: url(/PIE.htc);
 #region-footer-second a:visited, #region-footer-second a:link {color:#B70101;}
 /*end second footer */
 /***** End Footer *****/
+
+
+
+
+
+
+/**
+ * If you want to use a Mega Menu on your website comment this block of code.
+ * I would rather have the default behavior be the Mega Menu, but if you are
+ * creating a Mega Menu, you better know how to comment out this code.
+ *
+ * If you don't know how to comment out code, check out codeyear.com
+ */
+
+div.zone-menu li {display:block; float:left; margin-left:0px; }
+.zone-menu a:link, .zone-menu a:visited {text-decoration:none; }
+.zone-menu  a {
+	color:#b80404;
+	padding:0 10px 0;
+	font-size:14px;
+	line-height:25px;
+}
+.zone-menu  li {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
+.zone-menu li.first {border-left:none; }
+.zone-menu  li.last {border-right:none; }
+.zone-menu li:hover, .zone-menu  li.active {
+	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+background-image: -moz-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+background-image: -webkit-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+background-image: -ms-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.06, rgb(229,215,190)),
+	color-stop(0.53, rgb(234,221,204)),
+	color-stop(0.87, rgb(239,230,218))
+);
+}
+/**/
+
+
+
+
