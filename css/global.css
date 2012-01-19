@@ -238,17 +238,19 @@ behavior: url(/PIE.htc);
 #region-footer-first {color:#C8C5BB; }
 #region-footer-first a:visited, #region-footer-first a:link {color:white; }
 /*** add id's of blocks here to float them.  The block that is higher on the Structure > Block page will be farthest left. ***/    
-#block-system-powered-by, #block-block-2 {float:left; padding:10px; padding-right:30px; }
+#block-system-powered-by {float:left; padding:10px; padding-right:30px; }
 
 /*end first footer */
 
 /*start second footer */
-#region-footer-second {text-align:center; font-size:11px;}
-#region-footer-second a:visited, #region-footer-second a:link {color:#B70101;}
 /*end second footer */
 /***** End Footer *****/
 
+/** Start footer postscript **/
 
+#region-footer-postscript {text-align:center; font-size:11px;}
+#region-footer-postscript a:visited, #region-footer-second a:link {color:#B70101;}
+/** End Footer postscript **/
 
 
 
