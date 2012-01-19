@@ -110,7 +110,7 @@ behavior: url(/PIE.htc);  /* this needs to have the path be corrected */
     box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
     -moz-box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
     -webkit-box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
-    z-index:6000000;
+    z-index:6;
     position:relative;
 }
 #region-menu {}
@@ -209,7 +209,7 @@ background: linear-gradient(#e9e7db, #ffffff);
 -pie-background: linear-gradient(#e9e7db, #ffffff);
 behavior: url(/PIE.htc);
 }
-#zone-content {z-index:1; background-color:white; border-right:1px solid black; border-width:1px; border-style:none solid; border-color:#666666; position:relative; }
+#zone-content {z-index:1; background-color:white; border-right:1px solid black; border-left:1px solid black; position:relative; }
 
 /* Start quick facts skin as scean http://www.wisc.edu/academics/ */
 #block-block-3 {background-color:#F1EDE7; width:275px; border: 1px solid #C9AB80; margin-bottom:10px;
@@ -232,8 +232,9 @@ behavior: url(/PIE.htc);
 
 /****** Start Footer *****/
 /*start first footer */
-#region-footer-first {margin:0; margin-left:-1px; width:100%; border-right:1px solid black; border-width:1px; border-style:none solid; border-color:#666666;
-    background: url("../images/footer_1200.jpg") no-repeat scroll 0 0 #666152; height:200px; }
+#zone-footer {border-right:1px solid black; border-width:1px; border-style:none solid; border-color:#666666; background-color:#666152; height:200px; }
+/* use if you want the background chairs, just uncomment out the next link of code.*/
+/*#zone-footer { background: url("../images/footer_1200.jpg") no-repeat scroll 0 0 #666152; }*/
 #region-footer-first {color:#C8C5BB; }
 #region-footer-first a:visited, #region-footer-first a:link {color:white; }
 /*** add id's of blocks here to float them.  The block that is higher on the Structure > Block page will be farthest left. ***/    
@@ -260,7 +261,7 @@ behavior: url(/PIE.htc);
  * If you don't know how to comment out code, check out codeyear.com
  */
 
-div.zone-menu li {display:block; float:left; margin-left:0px; }
+div.zone-menu li {display:block; float:left; margin-left:0px; margin-right:0px; }
 .zone-menu a:link, .zone-menu a:visited {text-decoration:none; }
 .zone-menu  a {
 	color:#b80404;
@@ -270,7 +271,7 @@ div.zone-menu li {display:block; float:left; margin-left:0px; }
 }
 .zone-menu  li {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
 .zone-menu li.first {border-left:none; }
-.zone-menu  li.last {border-right:none; }
+.zone-menu  li.last {border-right:1px solid #ae9779; }
 .zone-menu li:hover, .zone-menu  li.active {
 	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
 background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
