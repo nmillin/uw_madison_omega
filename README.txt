@@ -127,6 +127,7 @@ Any thoughts/ideas???
 
 -Add MegaMenu Configuration to your Nav Menu(**Optional, only if you want a MegaMenu**)
       -Go to global/menu.css and comment out the default menu css (you will see notes on what to comment out).
+      -Go to the Theme settings and uncheck the Main menu.
       -Configuration > User Interface > Mega Menus
       -Click the Checkbox of the Menu you want to use
       -You will also have to Configure the Menu you checked (Main Menu)
@@ -177,7 +178,7 @@ Any thoughts/ideas???
             explains this much better than I.
             
       -By default the dropdown hover box will be 600px wide.  For menu items, like RESEARCH, that only
-      have 2 columns, the 600px is too wide.  --Future will add code so you can just add a class to the menu item.
+      have 2 columns, the 600px is too wide.  --Future will add code so you can just add a class to the menu item, but right now menu_attributes is not compatable w/ Megamenu.
             -Find the id and add it to the css selector by "smaller dropdown megamenu"
             ex. - each Megamenu parent will have a list-item like
                   <li id="megamenu-mlid-###".....  where the ### are numbers
