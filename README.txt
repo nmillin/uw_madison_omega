@@ -42,7 +42,7 @@ to the theme (to get gradients, rounded corners & shadows working) and the IE st
       -Added accordion menu
       -Added Block Class Module so you can "skin" blocks easier.
       -CSS is divided from global.css depending on zone.
-      
+      -Bunch of other stuff too, but nothing exciting.
 *********
 
 Requirements
@@ -113,7 +113,7 @@ Start Readme
 Future Devolopment for the UW_Madison_Omega Theme:
 -Add some CSS to the Content Region (nothing there right now)
       -Create more skins for blocks & the content region.
-      
+      -Should the Skins have some default padding???
 -Demo this at a Meetup (doing so 2/7/12)
 -Drink beer
 
