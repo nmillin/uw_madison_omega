@@ -6,43 +6,41 @@
 
 /****** Start Header *****/
 
-/**Start very top nav **/
+/**Start Accordion Zone**/
+#zone-accordion-wrapper li {padding:0 15px; }
+#zone-accordion-wrapper a:visited, #zone-accordion-wrapper a:link {color:white; text-decoration:none; font-size:14px; }
+/**End Accordion Zone**/
 
-/**End very top nav **/
+/**Start user zone **/
 
-/** Start branding region **/
+/**End user zone **/
 
-/* start site-name & slogan */
+/** Start branding zone **/
+h1.site-name, h2.site-name {font-size:50px; }
 
-/* end site-name & slogan */
+/** End branding zone **/
 
-/** Start search box **/
-
-/** End search box **/
-
-/** End branding region **/
-
-/** Start Main Menu **/
-
-/** other menu css at nice_menu_uw.css **/
-
-
-/** Start Mega Menu **/
+/** Start Main Menu zone **/
 .megamenu-skin-uw-madison .megamenu-parent-title a { padding:0 12px 0; font-size:16px; }
-/** End Mega Menu **/
-/***** End Header *****/
 
-/****** Start Content *****/
+/** End Main Menu zone **/
 
+/****** Start Content Zone *****/
 
-/***** End Content *****/
+/***** End Content Zone *****/
 
-/****** Start Footer *****/
-/*start first footer */
+/****** Start Preface Zone *****/
 
-/*end first footer */
+/***** End Preface Zone *****/
 
-/*start second footer */
+/****** Start Postscript Zone *****/
 
-/*end second footer */
-/***** End Footer *****/
+/***** End Postscript Zone *****/
+
+/****** Start Footer Zone *****/
+
+/***** End Footer Zone *****/
+
+/****** Start Footer Postscript Zone *****/
+
+/***** End Footer Postscript Zone *****/

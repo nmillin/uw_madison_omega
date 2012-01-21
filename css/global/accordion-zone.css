@@ -1,0 +1,17 @@
+#zone-accordion-wrapper {
+    background: #981313;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#981313), to(#6E1010));
+    background: -webkit-linear-gradient(#981313, #6E1010);
+    background: -moz-linear-gradient(#981313, #6E1010);
+    background: -ms-linear-gradient(#981313, #6E1010);
+    background: -o-linear-gradient(#981313, #6E1010);
+    background: linear-gradient(#981313, #6E1010);
+    -pie-background: linear-gradient(#981313, #6E1010);
+    behavior: url(/PIE.htc); /**Fix path if you want ie < 9 to work **/
+    border-bottom:2px solid grey;
+}
+#zone-accordion-wrapper li {float:right; border-left:1px dotted #444444; padding:0 15px; margin:0; }
+#zone-accordion-wrapper li.last {border-left:none; }
+#zone-accordion-wrapper .region {display:none; padding:5px 0; }
+#zone-accordion-wrapper a:visited, #zone-accordion-wrapper a:link {color:white; text-decoration:none; font-size:14px; }
+#zone-accordion-wrapper a:hover {color:darkgrey; }

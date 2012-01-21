@@ -1,0 +1,18 @@
+/** Start branding region **/
+
+/* start site-name & slogan */
+h1.site-name a:link, h1.site-name a:visited {color:white; }
+h1.site-name, h6.site-slogan, h2.site-name {font-family: "Comic Sans MS, Comic Sans MS5, cursive"; font-weight:100; }
+h1.site-name, h2.site-name {font-size:30px; color:white; letter-spacing:2px; margin-top:10px; }
+h1.site-name a:link, h1.site-name a:visited, h2.site-name a:link, h2.site-name a:visited {color:white; }
+h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
+.logo-img {display:none; }
+/* end site-name & slogan */
+
+#zone-branding {background-color: #B70101; color: #FFFFFF; position: relative; }
+.logo-img {height: 104px; width: 70px; margin-top:-20px;}
+#zone-branding-wrapper {padding-top:7px; }
+
+.block-search {padding:0px 0px 10px 0px; margin-bottom:10px; }
+
+/** End branding region **/

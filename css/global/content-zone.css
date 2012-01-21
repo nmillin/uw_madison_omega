@@ -1,0 +1,37 @@
+/****** Start Content *****/
+section#section-content {
+    background: #e9e7db;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e9e7db), to(#ffffff));
+background: -webkit-linear-gradient(#e9e7db, #ffffff);
+background: -moz-linear-gradient(#e9e7db, #ffffff);
+background: -ms-linear-gradient(#e9e7db, #ffffff);
+background: -o-linear-gradient(#e9e7db, #ffffff);
+background: linear-gradient(#e9e7db, #ffffff);
+-pie-background: linear-gradient(#e9e7db, #ffffff);
+behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
+}
+
+#zone-content {z-index:1; background-color:white; border-right:1px solid black; border-left:1px solid black; position:relative; }
+
+/* Start quick facts skin as seen http://www.wisc.edu/academics/ */
+.quick-facts {background-color:#F1EDE7; max-width:275px; border: 1px solid #C9AB80; margin-bottom:10px;
+    border-radius: 6px; 
+    -moz-border-radius: 6px; 
+    -webkit-border-radius: 6px;
+    behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
+}
+.quick-facts ul {list-style:none; }
+.quick-facts .content {padding-left: 20px; }
+.quick-facts h2 {line-height:1; font-size:14px; background-color:#C9AB80; color:#FFFFFF; padding:7px 5px 5px 20px; text-transform:uppercase; margin-bottom:15px; font-weight:bold; }
+/* End quick facts skin */
+
+
+/* Start red ul links widget skin (RESOURCES widget scean http://www.wisc.edu/academics/) */
+.red-links {max-width:290px;  }
+.red-links .content a:hover {text-decoration:underline; }
+.red-links .content a {color:#B70101; text-decoration:none;}
+.red-links .content li {color:#C9AB80; margin-left:35px; margin-bottom:.75em; line-height:1.2;}
+.red-links h2 {background-color:#B70101; color:#FFFFFF; line-height:2; margin-bottom:15px; text-transform:uppercase; padding-left:20px; font-weight:bold; }
+/* End red ul links widget skin */
+
+/***** End Content *****/

@@ -1,0 +1,9 @@
+#zone-user-wrapper {padding-top:10px; }
+
+#region-user-second li {border-left: 1px solid #A67B3E; display: inline-block; line-height: 1; margin: 0; padding: 0 10px; }
+#region-user-second li a:visited, #region-user-second li a:link {color:#EFE8D8; text-decoration:none; font-size:11px; font-family:"Lucida Grande",Verdana,sans-serif;}
+#region-user-second li {float:left; }
+#region-user-second li.first {border-left:none; }
+
+/* #block-menu-menu-very-top-menu should be the id of the menu that you placed above the search*/
+#region-user-second .block-menu {float:right; margin-top:5px; } /* "add user bar menu id" */

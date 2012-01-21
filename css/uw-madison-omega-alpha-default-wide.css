@@ -1,48 +1,40 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
-
 /****** Start Global *****/
 
 /***** End Global *****/
 
 /****** Start Header *****/
 
-/**Start very top nav **/
+/**Start user zone **/
 
-/**End very top nav **/
+/**End user zone **/
 
-/** Start branding region **/
-
-/* start site-name & slogan */
-
-/* end site-name & slogan */
-
-/** Start search box **/
-
-/** End search box **/
-
-/** End branding region **/
-
-/** Start Main Menu **/
-
-/** other menu css at nice_menu_uw.css **/
+/** Start branding zone **/
 
 
-/** Start Mega Menu **/
+/** End branding zone **/
 
-/** End Mega Menu **/
-/***** End Header *****/
-
-/****** Start Content *****/
+/** Start Main Menu zone **/
 
 
-/***** End Content *****/
+/** End Main Menu zone **/
 
-/****** Start Footer *****/
-/*start first footer */
+/****** Start Content Zone *****/
 
-/*end first footer */
+/***** End Content Zone *****/
 
-/*start second footer */
+/****** Start Preface Zone *****/
 
-/*end second footer */
-/***** End Footer *****/
+/***** End Preface Zone *****/
+
+/****** Start Postscript Zone *****/
+
+/***** End Postscript Zone *****/
+
+/****** Start Footer Zone *****/
+
+/***** End Footer Zone *****/
+
+/****** Start Footer Postscript Zone *****/
+
+/***** End Footer Postscript Zone *****/

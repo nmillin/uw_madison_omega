@@ -6,44 +6,48 @@
 
 /****** Start Header *****/
 
-/**Start very top nav **/
+/**Start Accordion Zone**/
+#zone-accordion-wrapper li {padding:0 8px; }
+#zone-accordion-wrapper a:visited, #zone-accordion-wrapper a:link {color:white; text-decoration:none; font-size:12px; }
+/**End Accordion Zone**/
 
-/**End very top nav **/
+/**Start user zone **/
+#region-user-first .region-inner {padding-left:62px; }
+/**End user zone **/
 
-/** Start branding region **/
+/** Start branding zone **/
 
-/* start site-name & slogan */
 .logo-img {display:inline; }
-/* end site-name & slogan */
-
 .branding-data {float:left; }
-
-/** Start search box **/
+h1.site-name, h2.site-name {font-size:40px; }
 .block-search {float:right; padding:30px 10px 0 0;}
-/** End search box **/
 
-/** End branding region **/
+/** End branding zone **/
 
-/** Start Main Menu **/
+/** Start Main Menu zone **/
 #zone-menu-wrapper {margin-top:0px; }
 
 
-/** Start Mega Menu **/
 .megamenu-skin-uw-madison .megamenu-parent-title a { padding:0 6px 0; font-size:13px; }
-/** End Mega Menu **/
-/***** End Header *****/
+/** End Main Menu zone **/
 
-/****** Start Content *****/
+/****** Start Content Zone *****/
 
+/***** End Content Zone *****/
 
-/***** End Content *****/
+/****** Start Preface Zone *****/
 
-/****** Start Footer *****/
-/*start first footer */
+/***** End Preface Zone *****/
 
-/*end first footer */
+/****** Start Postscript Zone *****/
 
-/*start second footer */
+/***** End Postscript Zone *****/
 
-/*end second footer */
-/***** End Footer *****/
+/****** Start Footer Zone *****/
+
+/***** End Footer Zone *****/
+
+/****** Start Footer Postscript Zone *****/
+
+/***** End Footer Postscript Zone *****/
+

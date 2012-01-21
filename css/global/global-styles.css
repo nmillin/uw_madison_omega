@@ -1,0 +1,15 @@
+/****** Start Global *****/
+html {
+    background-color: #FFFFFF;
+    /*background-image: url("../images/bgGradient-main.jpg");/*Removed so using CSS3 for the background, but use if you like killing kittens.*/
+    background-repeat: repeat-x;
+    color: #000000;
+    font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
+}
+body, body h2, body h3, body h4, body h5, body h6 {
+    color: #333333;
+    font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
+}
+
+ul li.leaf {list-style:none;}
+/***** End Global *****/

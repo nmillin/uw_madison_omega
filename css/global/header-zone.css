@@ -1,0 +1,14 @@
+/****** Start Header *****/
+header {
+    background: #9a0002;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9a0002), to(#670003));
+background: -webkit-linear-gradient(#9a0002, #670003);
+background: -moz-linear-gradient(#9a0002, #670003);
+background: -ms-linear-gradient(#9a0002, #670003);
+background: -o-linear-gradient(#9a0002, #670003);
+background: linear-gradient(#9a0002, #670003);
+-pie-background: linear-gradient(#9a0002, #670003);
+behavior: url(/PIE.htc); /* this needs to have the path be corrected */
+}
+
+/***** End Header *****/
