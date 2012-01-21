@@ -14,19 +14,21 @@
 
 Created By:             Nate Millin
 Created Date:           12/30/2011
-Last Updated:           1/20/2012
+Last Updated:           1/21/2012
 Twitter:                nmillin
 D.org:                  nmillin
 
 Informational:  
 Documentation:  
 Project Page:           http://comets.wisc.edu/groups/836/427/uw-drupal-theme
-Issue Queue:            Going through Lauren's suggestions.
+Issue Queue:            Lauren's suggestions have been gone through.
 Usage Stats:            Nate (Localhost) & Lauren (dev site)
 ##########################################################################################
 ##### How To Use the UW Madison Omega Theme -- Walkthrough
 ##########################################################################################
 
+*******
+Updates
 *******
 Please note that this theme hasn't been IE tested yet.  CSS3PIE needs to be added
 to the theme (to get gradients, rounded corners & shadows working) and the IE stylesheet needs to be added to (probably).
@@ -39,14 +41,24 @@ to the theme (to get gradients, rounded corners & shadows working) and the IE st
       
 -update 1/20/2012 -- Doing some major changes to the css.  Trying to get rid of all the hard-coded #ids in the css.
       This way people can just drop a block (menu or otherwise) in a region (title <none>) and you will be good to go.
-      -Added accordion menu
+              -The MegaMenu still has some hardcoded #ids if you want to override the default behavior and won't be fixed
+                   until Menu_Attibutes & MegaMenu can work together.
+      -Added accordion menus
       -Added Block Class Module so you can "skin" blocks easier.
       -CSS is divided from global.css depending on zone.
       -Bunch of other stuff too, but nothing exciting.
-*********
 
-Requirements
+*******
+Modules
+*******
+Required
 -Omega base theme (drupal.org/project/omega) installed and enabled
+
+Recommended -- will make your life easier
+-Admin Menu (drupal.org/project/admin_menu) - To have a dropdown admin menu, but disable the Toolbar Module if you do this.
+-Module Filter (drupal.org/project/module_filter) 
+-Menu Attributes (drupal.org/project/menu_attributes) - can add classes to menu items.  This is used to create a menu accordion (see below).
+-Block Class (drupal.org/project/block_class) - can add a class to a block.  Used to skin the blocks (see below).
 -MegaMenu to use the dropdowns (http://drupal.org/project/megamenu)
       -You will find the css started for using the Nice_menus module and the nice_menus.css.
       In a nice_menu issue (http://drupal.org/node/973500) the maintainer said that they wouldn't add the functionality
@@ -54,29 +66,27 @@ Requirements
       the nice menu module there is a start for you.  The nav does require MegaMenu to
       have the hover effects & more to work.
       --**update 1/20/12** - this module isn't required if you don't want a dropdown.  
-
-Recommended Modules -- will make your life easier
--Admin Menu (drupal.org/project/admin_menu)
--Module Filter (drupal.org/project/module_filter)
--Menu Attributes (drupal.org/project/menu_attributes) - can add classes to menu items.  This is used to create a menu accordion (see below).
--Block Class (drupal.org/project/block_class) - can add a class to a block.  Used to skin the blocks (see below).
+-Omega Tools (for Development) -- Can subtheme Omega fast, and export your theme's updated settings to the .info file.
 
 Modules for Production with Omega
--Context -- Allows you to have conditions & reactions to determine block placement & delta.
+-Context -- Allows you to have conditions & reactions to determine block placement & delta (don't have to use the Block interface).
 -Delta -- Allows you to save a Omega Zone & Region Configuration and then can set it for different Conditions using the Context Module.
--Omega Tools (Development) -- Can subtheme Omega fast, and export your theme's updated settings to the .info file.
 
 
 ************
 Start Readme
 ************
+-Install Omega & the UW_Madison_Omega themes
+
+-Enable and Set UW_Madison_Omega as the default theme
+
 -Add a Menu Block to the User Bar Second (make sure the title is set to <none>)
 
 -Make sure the site slogan is set to what you want (if you want one)
 
 -Add the Search Block to the Branding Region (change permissions to let anonymous users use the search)
 
--Add MegaMenu Configuration to your Nav Menu **Optional** (See Notes at bottom of ReadMe)
+-Add MegaMenu Configuration to your Main Menu **Optional** (See Notes at bottom of ReadMe)
 
 -add a block to a region in the footer zone to get the background color working (Structure > Blocks)
       -By default there are 4 regions in the footer zone.  You can remove regions or resize them
@@ -89,7 +99,8 @@ Start Readme
       page widths (mobile phones, tablets, etc)
 
 -if you want to have a menu accordion like Vanderbilt does on http://www.vanderbilt.edu/chancellor/
-      when you click on NAVIGATE VU, a menu appears above.  **requires menu_attributes module**
+      when you click on NAVIGATE VU, a menu appears above.
+      -Install and enable the Menu_Attributes Module
       -Make sure you already have a menu in the upper right corner (we'll call it "Top Right Menu")
       -Create a new menu (I called it "Nate's Accordion Menu", but name it whatever you want) and order the links
               with the links that should go to the right at the top.
@@ -97,6 +108,8 @@ Start Readme
       -add the menu (Nate's Accordion Menu) to one of the 3 accordion regions (I added it to the first accordion region)
       -In the "Top Right Menu" there is a link called "open menu", that when you click on it, the
               menu you placed in the accordion ("Nate's Accordion Menu") will appear
+              -This link must go somewhere for accessibility reasons.  If javascript is disabled the Accordion won't work
+                   so this could link to wisc.edu, or somewhere.
       -Add a class to the "open menu" link of "accordion-first".  (or "accordion-second" if you placed it in the second accordion region, or "accordion-third"...)
       -Done.
       -Personal Opinion.  This would be a great way of linking back to the wisc.edu site.
@@ -105,7 +118,7 @@ Start Readme
 -Skining Blocks - You will need to install/enable the Block Class module.
       -When you edit/create a block you can now add a class to it.  I have created
               3 different skins - "quick-facts", "red-links" & "footer-block-skin" (see http://www.wisc.edu/academics/ for an example)
-              -so if you want create a quick-facts block, just add "quick-facts" (no quotes) in the configure block settings.
+              -so if you want create a quick-facts block, just add "quick-facts" class (no quotes) in the configure block settings.
               -The CSS for the skins is in content-zone.css.
       -*** If you create more skins let me know so I can add them to the theme. ***
 
@@ -114,6 +127,9 @@ Future Devolopment for the UW_Madison_Omega Theme:
 -Add some CSS to the Content Region (nothing there right now)
       -Create more skins for blocks & the content region.
       -Should the Skins have some default padding???
+      -Should a Sidebar be Yellow?
+      -Should a Menu in the Sidebar be themed like on http://uc.wisc.edu/brand/templates-and-downloads/web/index-no-top-nav/index.html ?
+      -Search Block.  Should I try to match wisc.edu exactly or make it better?  Focus/Blur currently.
 -Demo this at a Meetup (doing so 2/7/12)
 -Drink beer
 

@@ -8,7 +8,7 @@ $imagepath = drupal_get_path('theme', 'uw_madison_omega') . '/images/wordmark.gi
 ?>
 <div<?php print $attributes; ?>>
   <div<?php print $content_attributes; ?>>
-    <a href="http://www.wisc.edu/" alt="link to Wisc.edu"><img src="<?php echo $imagepath; ?>" alt="University of WisconsinÐMadison" /></a>
+    <a href="http://www.wisc.edu/" title="Go to Wisc.edu"><img src="<?php echo $imagepath; ?>" alt="University of Wisconsin-Madison" /></a>
     <?php print $content; ?>
   </div>
 </div>
