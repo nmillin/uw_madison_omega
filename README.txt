@@ -142,7 +142,7 @@ Future Devolopment for the UW_Madison_Omega Theme:
       -Should the Skins have some default padding???
       -Should a Sidebar be Yellow?
       -Should a Menu in the Sidebar be themed like on http://uc.wisc.edu/brand/templates-and-downloads/web/index-no-top-nav/index.html ?
-      -Search Block.  Should I try to match wisc.edu exactly or make it better?  Focus/Blur currently.
+-Search Block.  Should I try to match wisc.edu exactly or make it better?  Focus/Blur currently.
 -Demo this at a Meetup (doing so 2/7/12)
 -Drink beer
 
