@@ -34,7 +34,9 @@ Please note that this theme hasn't been IE tested yet.  CSS3PIE needs to be adde
 to the theme (to get gradients, rounded corners & shadows working) and the IE stylesheet needs to be added to (probably).
 
 -update 1/1/2012 -- I have added two skins for blocks.  You can see the screenshot at http://www.flickr.com/photos/55453037@N08/6614486559/in/photostream
+
 -update 1/15/2012 -- I have added CSS3 for the background gradients.  Now you don't have to adjust the padding so everything lines up.
+
 -update 1/18/2012 -- Lauren mentioned that it would be nice if the default behavior would be for the menu to be styled like wisc.edu without
       requiring the Mega Menu Module.  I made that the default behavior.  If you want the Mega Menu, just comment out the section of code
       at the bottom of global/menu-zone.css (you can't miss it).
@@ -47,6 +49,10 @@ to the theme (to get gradients, rounded corners & shadows working) and the IE st
       -Added Block Class Module so you can "skin" blocks easier.
       -CSS is divided from global.css depending on zone.
       -Bunch of other stuff too, but nothing exciting.
+
+-update 1/21/2012 -- Added notes in the readme on how to subtheme this module using the Omega Tools Module.
+      -Updated the Omega Screenshot for the Theme.  Added the UW Crest where the Omega Logo was.  If someone has better PhotoShop skills they
+            could make a sweeter Screenshot.
 
 *******
 Modules
@@ -122,6 +128,13 @@ Start Readme
               -The CSS for the skins is in content-zone.css.
       -*** If you create more skins let me know so I can add them to the theme. ***
 
+-If you want to Extend this Theme I suggest you Subtheme it.
+      -Install and Enable Omega_Tools Module.
+      -Go to appearance/omega-tools/add
+      -Add name and choose UW Madison Omega.
+      -Keep Defaults (install auto, dest all...)
+      -Add a Description & a version #
+      -Save and then you can enable your theme!
 
 Future Devolopment for the UW_Madison_Omega Theme:
 -Add some CSS to the Content Region (nothing there right now)
