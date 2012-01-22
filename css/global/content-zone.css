@@ -34,4 +34,27 @@ behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
 .red-links h2 {background-color:#B70101; color:#FFFFFF; line-height:2; margin-bottom:15px; text-transform:uppercase; padding-left:20px; font-weight:bold; }
 /* End red ul links widget skin */
 
+
+/* Start Quick Links widget (http://uc.wisc.edu/brand/templates-and-downloads/web/index-top-nav-and-left-sidebar/index.html)*/
+.quick-links h2 {color:#666666; font-size:13px; }
+.quick-links a:link, .quick-links a:visited {color:#B70101; font-size:16px; text-decoration:none; }
+.quick-links a:hover {text-decoration:underline; }
+.block-menu.quick-links li {margin-left:0; margin-bottom:7px; }
+/* End Quick Links widget */
+
+
+/* Start Sidebar Menu -- set title <none> */
+.sidebar-menu a:link, .sidebar-menu a:visited {color:#B70101; text-decoration:none; font-size:14px; }
+.sidebar-menu a:hover {text-decoration:underline; }
+.block-menu.sidebar-menu li {margin-bottom:8px; margin-left:0; }
+/* End Sidebar Menu */
+
+.section-content .block {margin-top:40px; }
+
+/* Start Breadcrumbs */
+.breadcrumb a:link, .breadcrumb a:visited {color:#B70101; text-decoration:none; }
+.breadcrumb a:hover {text-decoration:underline; }
+.breadcrumb {float:right; padding-right:20px; }
+/* End Breadcrumbs */
+
 /***** End Content *****/

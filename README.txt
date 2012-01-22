@@ -53,7 +53,9 @@ to the theme (to get gradients, rounded corners & shadows working) and the IE st
 -update 1/21/2012 -- Added notes in the readme on how to subtheme this module using the Omega Tools Module.
       -Updated the Omega Screenshot for the Theme.  Added the UW Crest where the Omega Logo was.  If someone has better PhotoShop skills they
             could make a sweeter Screenshot.
+      -Add CSS for the Breadcrumb & changed the template.php file to change the breadcrumb separator.
 
+-update 1/22/2012 -- Added 2 more skins (sidebar-menu & quick-links).  Blocks have 40px; default padding.
 *******
 Modules
 *******
@@ -73,6 +75,8 @@ Recommended -- will make your life easier
       have the hover effects & more to work.
       --**update 1/20/12** - this module isn't required if you don't want a dropdown.  
 -Omega Tools (for Development) -- Can subtheme Omega fast, and export your theme's updated settings to the .info file.
+-Menu Breadcrumb -- Drupal 7 uses the Main Menu to determine the breadcrumbs, but this module allows you to use the menu the current page
+      belongs to.  You will have more fine grain control of the breadcrumb settings.
 
 Modules for Production with Omega
 -Context -- Allows you to have conditions & reactions to determine block placement & delta (don't have to use the Block interface).
@@ -123,7 +127,7 @@ Start Readme
 
 -Skining Blocks - You will need to install/enable the Block Class module.
       -When you edit/create a block you can now add a class to it.  I have created
-              3 different skins - "quick-facts", "red-links" & "footer-block-skin" (see http://www.wisc.edu/academics/ for an example)
+              5 different skins - "quick-facts", "red-links", "quick-links", "sidebar-menu" & "footer-block-skin" (see http://www.wisc.edu/academics/ for an example)
               -so if you want create a quick-facts block, just add "quick-facts" class (no quotes) in the configure block settings.
               -The CSS for the skins is in content-zone.css.
       -*** If you create more skins let me know so I can add them to the theme. ***
@@ -138,10 +142,11 @@ Start Readme
 
 Future Devolopment for the UW_Madison_Omega Theme:
 -Add some CSS to the Content Region (nothing there right now)
-      -Create more skins for blocks & the content region.
-      -Should the Skins have some default padding???
+      -Create more skins for blocks & the content region. --**update** 2 new skins (quick-links & sidebar-menu), but more?
+      -Should the Skins have some default padding???  --**update** .block {margin-top:40px; }
       -Should a Sidebar be Yellow?
-      -Should a Menu in the Sidebar be themed like on http://uc.wisc.edu/brand/templates-and-downloads/web/index-no-top-nav/index.html ?
+      -How should the breadcrumbs be styled?
+      -Should a Menu in the Sidebar be themed like on http://uc.wisc.edu/brand/templates-and-downloads/web/index-no-top-nav/index.html ?  --**update** added sidebar-menu skin
 -Search Block.  Should I try to match wisc.edu exactly or make it better?  Focus/Blur currently.
 -Demo this at a Meetup (doing so 2/7/12)
 -Drink beer

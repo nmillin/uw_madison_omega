@@ -29,3 +29,24 @@ function uw_madison_omega_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
+/**
+ * hook_breadcrumb() to change the breadcrumb separator.
+ * Works, but had to move the return $output; inside of the if statement b/c if there wasn't
+ * a breadcrumb for the page, there was a $output variable not defined error.  I'm guessing it's
+ * not available for this page???
+ *
+ * Code for breadcrumb gotten from http://drupal.org/node/1326740.
+ */
+function uw_madison_omega_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+
+  if (!empty($breadcrumb)) {
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+    $output .= '<div class="breadcrumb">' . implode(' > ', $breadcrumb) . '</div>';
+    return $output;
+  }
+
+  
+}
