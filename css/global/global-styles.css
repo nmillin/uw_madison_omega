@@ -13,5 +13,5 @@ body, body h2, body h3, body h4, body h5, body h6 {
 
 ul li.leaf {list-style:none;}
 
-a:link, a:visited {color:#B70101; }
+a:link, a:visited {color:#B70101; text-decoration:none; }
 /***** End Global *****/
