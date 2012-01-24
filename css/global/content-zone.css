@@ -32,15 +32,15 @@ behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
 .red-links .content a:hover {text-decoration:underline; }
 .red-links .content a {color:#B70101; text-decoration:none;}
 .red-links .content li {color:#C9AB80; margin-left:35px; margin-bottom:.75em; line-height:1.2;}
-.red-links h2 {background-color:#B70101; color:#FFFFFF; line-height:2; margin-bottom:15px; text-transform:uppercase; padding-left:20px; font-weight:bold; }
+.red-links h2.block-title {background-color:#B70101; color:#FFFFFF; line-height:2; margin-bottom:15px; text-transform:uppercase; padding-left:20px; font-weight:bold; }
 /* End red ul links widget skin */
 
 
 /* Start Quick Links widget (http://uc.wisc.edu/brand/templates-and-downloads/web/index-top-nav-and-left-sidebar/index.html)*/
-.quick-links h2 {color:#666666; font-size:13px; }
-.quick-links a:link, .quick-links a:visited {color:#B70101; font-size:16px; text-decoration:none; }
+.quick-links h2.block-title {color:#666666; font-size:13px; }
+.quick-links a:link, .quick-links a:visited {color:#B70101; text-decoration:none; }
 .quick-links a:hover {text-decoration:underline; }
-.block-menu.quick-links li {margin-left:0; margin-bottom:7px; }
+.block-menu.quick-links li {margin-left:0; margin-bottom:7px; font-size:16px; }
 /* End Quick Links widget */
 
 

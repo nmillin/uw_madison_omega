@@ -124,7 +124,7 @@ background-image: -webkit-gradient(
  * If you don't know how to comment out code, check out codeyear.com.
  */
 
-div.zone-menu li {display:block; float:left; margin-left:0px; margin-right:0px; }
+div.zone-menu li {display:block; float:left; margin-left:0px; margin-right:0px; padding-right:3px; padding-left:3px; }
 div.zone-menu a:link, .zone-menu a:visited {text-decoration:none; }
 div.zone-menu  a {
 	color:#b80404;
