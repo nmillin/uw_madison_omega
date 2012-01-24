@@ -1,5 +1,5 @@
 /****** Start Header *****/
-header {
+header#section-header {
     background: #9a0002;
 background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9a0002), to(#670003));
 background: -webkit-linear-gradient(#9a0002, #670003);
