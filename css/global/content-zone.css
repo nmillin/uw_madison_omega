@@ -22,7 +22,8 @@ behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
 }
 .quick-facts ul {list-style:none; }
 .quick-facts .content {padding-left: 20px; }
-.quick-facts h2 {line-height:1; font-size:14px; background-color:#C9AB80; color:#FFFFFF; padding:7px 5px 5px 20px; text-transform:uppercase; margin-bottom:15px; font-weight:bold; }
+.quick-facts h2.block-title {line-height:1; font-size:14px; background-color:#C9AB80; color:#FFFFFF; padding:7px 5px 5px 20px; text-transform:uppercase; margin-bottom:15px; font-weight:bold; }
+.quick-facts h2.node-title a:visited, .quick-facts h2.node-title a:link {color:black; text-transform:uppercase; }
 /* End quick facts skin */
 
 
