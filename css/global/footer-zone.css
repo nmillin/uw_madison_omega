@@ -6,5 +6,7 @@
 /*#zone-footer { background: url("../images/footer_1200.jpg") no-repeat scroll 0 0 #666152; }*/
 
 /** Footer Skin **/
-.footer-block-skin h2 {color:#C8C5BB; }
-.footer-block-skin a:visited, .footer-block-skin a:link {color:white; }
+#zone-footer h2 {color:white; font-size:13.5px; font-weight:700; line-height:13.5px; margin-bottom:10px; }
+#zone-footer a:visited, #zone-footer a:link {color:#D5D2C9; }
+#zone-footer a:hover {color:white; }
+#zone-footer {color:#C8C5BB; padding:15px 0 11px; }

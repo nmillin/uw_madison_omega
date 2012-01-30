@@ -132,9 +132,10 @@ div.zone-menu  a {
 	font-size:14px;
 	line-height:25px;
 }
-.zone-menu  li {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
+.zone-menu li {text-transform:uppercase; }
+.zone-menu li {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
 .zone-menu li.first {border-left:none; }
-.zone-menu  li.last {border-right:1px solid #ae9779; }
+.zone-menu li.last {border-right:1px solid #ae9779; }
 .zone-menu li:hover, .zone-menu  li.active {
 	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
 background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);

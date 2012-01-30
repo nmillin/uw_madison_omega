@@ -17,10 +17,10 @@
 
 /** Start branding zone **/
 
-.logo-img {display:inline; }
+.logo-img {display:inline; margin-right:10px; }
 .branding-data {float:left; }
-h1.site-name, h2.site-name {font-size:40px; }
-.block-search {float:right; padding:30px 10px 0 0;}
+h1.site-name, h2.site-name {font-size:40px; padding-top:5px; }
+.block-search {float:right; padding:0px 10px 0 0; margin-top:-33px; position:relative; }
 
 /** End branding zone **/
 

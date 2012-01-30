@@ -12,7 +12,20 @@ behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
 }
 
 #zone-content {z-index:1; background-color:white; border-right:1px solid black; border-left:1px solid black; position:relative; }
-
+#zone-content h1#page-title, #zone-content h2#page-title {
+    font-family: "Lucida Grande","Lucida Sans Unicode",sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 12px;
+    margin: .5em 0;
+    
+    /*alternative style*/
+    /*font-family: "Myriad Pro","Lucida Grande","Lucida Sans Unicode",sans-serif;
+    font-weight: normal;
+    font-size: 28px*/
+}
+#zone-content h2 {font-size: 13px; }
 /* Start quick facts skin as seen http://www.wisc.edu/academics/ */
 .quick-facts {background-color:#F1EDE7; max-width:275px; border: 1px solid #C9AB80; margin-bottom:10px;
     border-radius: 6px; 
