@@ -8,148 +8,182 @@
     background: -o-linear-gradient(#AC0608, #ab0907);
     background: linear-gradient(#AC0608, #ab0907);
     -pie-background: linear-gradient(#AC0608, #ab0907);
-    behavior: url(/PIE.htc);  /* this needs to have the path be corrected */
+    behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
-#zone-menu {   /** should add CSS3PIE for IE issues...   http://gradients.glrzad.com/.  Not sure how this will work w/ CSS3Pie.  It uses Hex instead of rgb**/
-    background-image: linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
-    background-image: -o-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
-    background-image: -moz-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
-    background-image: -webkit-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
-    background-image: -ms-linear-gradient(bottom, rgb(218,197,162) 6%, rgb(226,210,187) 53%, rgb(232,219,202) 87%);
-    background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.06, rgb(218,197,162)),
-	color-stop(0.53, rgb(226,210,187)),
-	color-stop(0.87, rgb(232,219,202))
-        );
+#zone-menu {   
+    /*
     min-height:25px;
-    box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
-    -moz-box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
-    -webkit-box-shadow: 0 3px 4px rgba(60, 60, 60, 0.3);
-    z-index:6;
+    */
     position:relative;
+    z-index:6;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    background: #e8dbca;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8dbca), to(#dac5a2));
+    background: -webkit-linear-gradient(#e8dbca, #dac5a2);
+    background: -moz-linear-gradient(#e8dbca, #dac5a2);
+    background: -ms-linear-gradient(#e8dbca, #dac5a2);
+    background: -o-linear-gradient(#e8dbca, #dac5a2);
+    background: linear-gradient(#e8dbca, #dac5a2);
+    -pie-background: linear-gradient(#e8dbca, #dac5a2);
+    behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
 #region-menu {margin-left:0; margin-right:0; width:960px; }
-
-/** other menu css at nice_menu_uw.css **/
-
-/** End Main Menu **/
-
-/**********************************************************
- * I stopped using the Nice Menu Module after doing some theming.  Nice Menus
- * doesn't allow for the Mega Menu without a lot of php & js so I will be using
- * Mega_Menu Module from here on http://www.cmsquickstart.com/blog/drupal-theme-design-tutorial-2-mega-menus
- **********************************************************/
-/** Start Mega Menu **/
-
-.megamenu-skin-uw-madison li.megamenu-parent {display:block; float:left; }
-
-.megamenu-skin-uw-madison a:hover, .megamenu-skin-uw-madison li.hovering a {  }
-.megamenu-skin-uw-madison a:link, .megamenu-skin-uw-madison a:visited {text-decoration:none; }
-.megamenu-skin-uw-madison .megamenu-parent-title a {
-	color:#b80404;
-	padding:0 10px 0;
-	font-size:14px;
-	line-height:25px;
-}
-/* start border separating each parent menu item */
-.megamenu-skin-uw-madison li.megamenu-parent {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
-.megamenu-skin-uw-madison li.megamenu-parent.first {border-left:none; }
-.megamenu-skin-uw-madison li.megamenu-parent.last {border-right:none; }
-/* end border separating each parent menu item */
-.megamenu-skin-uw-madison li.megamenu-parent:hover, .megamenu-skin-uw-madison li.megamenu-parent.active {
-	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-background-image: -moz-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-background-image: -webkit-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-background-image: -ms-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.06, rgb(229,215,190)),
-	color-stop(0.53, rgb(234,221,204)),
-	color-stop(0.87, rgb(239,230,218))
-);
-}
-/* use if you only have 2 lists in the dropdown (visiting campus & research only have 2 columns) */
-.megamenu-skin-uw-madison #megamenu-mlid-547 .megamenu-bin, .megamenu-skin-uw-madison #megamenu-mlid-544 .megamenu-bin {width:400px !important; }
-/* by default you will have the width of the dropdown set for 3 columns.  add the #id to the above selector if you only have 2 */
-.megamenu-skin-uw-madison .megamenu-bin { /* sets the dropdown box info */
-	z-index:-1;
-	padding:10px;
-	margin-top:-1px;
-	background-color:#F0E7D8;
-	font-size:0.9em;
-	line-height:2em;
-	width:600px !important;
-	-moz-box-shadow: 3px 3px 4px rgba(60, 60, 60, 0.4);
-	-webkit-box-shadow: 3px 3px 4px rgba(60, 60, 60, 0.4);
-	box-shadow: 3px 3px 4px rgba(60, 60, 60, 0.4);
-        opacity:0.95;
-}
-.megamenu-skin-uw-madison .megamenu-bin {list-style:none; }
-.megamenu-skin-uw-madison .megamenu-slot-title a {
-	color:#000000;
-	font-weight:bold;
-        font-family: "Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
-        font-size:12px;
-}
-.megamenu-skin-uw-madison .megamenu-slot-title a,.megamenu-skin-uw-madison .megamenu-items li a {padding-left:10px;}/*little padding so bg-color:hover will have padding.*/
-/** start hover effects for the mega-menu dropdown **/
-.megamenu-skin-uw-madison .megamenu-slot-title:hover {background-color:#D1BD98; }
-.megamenu-skin-uw-madison .megamenu-slot-title:hover a {color:#B70101; }
-.megamenu-skin-uw-madison .megamenu-items li:hover {background-color:#D1BD98; }
-.megamenu-skin-uw-madison .megamenu-items li a:hover,.megamenu-skin-uw-madison .megamenu-slot-title a:hover {text-decoration:none; }
-/** end hover effects for the mega-menu dropdown **/
-/** start the "read more" link **/
-.megamenu-skin-uw-madison .megamenu-slot.last {width:100%;}
-.megamenu-skin-uw-madison .megamenu-slot.last .megamenu-slot-title {float:right; padding:0px 10px 0 0; margin-top:10px; }
-.megamenu-skin-uw-madison .megamenu-slot.last .megamenu-slot-title a {color:#B70101; font-weight:bold; }
-/** end of "read more" link **/
-
-.megamenu-skin-uw-madison .megamenu-items li a {color:#B70101; }
-/** End Mega Menu **/
-
-
-
-/**
- * If you want to use a Mega Menu on your website, comment this block of code.
- * I would rather have the default behavior be the Mega Menu, but if you are
- * creating a Mega Menu, you better know how to comment out this code.
- *
- * If you don't know how to comment out code, check out codeyear.com.
- */
 
 div.zone-menu li {display:block; float:left; margin-left:0px; margin-right:0px; padding-right:3px; padding-left:3px; }
 div.zone-menu a:link, .zone-menu a:visited {text-decoration:none; }
 div.zone-menu  a {
-	color:#b80404;
-	padding:0 10px 0;
-	font-size:14px;
-	line-height:25px;
+    color:#b80404;
+    padding:0 10px 0;
+    font-size:14px;
+    line-height:25px;
 }
 .zone-menu li {text-transform:uppercase; }
 .zone-menu li {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
 .zone-menu li.first {border-left:none; }
 .zone-menu li.last {border-right:1px solid #ae9779; }
 .zone-menu li:hover, .zone-menu  li.active {
-	background-image: linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-background-image: -o-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-background-image: -moz-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-background-image: -webkit-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-background-image: -ms-linear-gradient(bottom, rgb(229,215,190) 6%, rgb(234,221,204) 53%, rgb(239,230,218) 87%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.06, rgb(229,215,190)),
-	color-stop(0.53, rgb(234,221,204)),
-	color-stop(0.87, rgb(239,230,218))
-);
+    background: #efe6da;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#efe6da), to(#e5d7be));
+    background: -webkit-linear-gradient(#efe6da, #e5d7be);
+    background: -moz-linear-gradient(#efe6da, #e5d7be);
+    background: -ms-linear-gradient(#efe6da, #e5d7be);
+    background: -o-linear-gradient(#efe6da, #e5d7be);
+    background: linear-gradient(#efe6da, #e5d7be);
+    -pie-background: linear-gradient(#efe6da, #e5d7be);
+    behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
-/* End of section to comment out for Mega Menu*/
+
+
+
+
+
+
+
+
+/** Start SuperFish Menu -- Code needs to be configured for UW Madison's Mega Menu.  Taken from Blue.css in libraries/Superfish/styles **/
+/* 
+.sf-menu.main-menu {
+  float: left;
+  margin-bottom: 1em;
+  padding: 0;
+}
+.sf-menu.main-menu.sf-navbar {
+  width: 100%;
+}
+.sf-menu.main-menu ul {
+  padding-left: 0;
+}
+.sf-menu.main-menu a {
+  border: 1px outset #003973;
+  color: #ffffff;
+  padding: 0.75em 1em;
+  white-space: nowrap;
+}
+.sf-menu.main-menu a.sf-with-ul {
+  padding-right: 2.25em;
+}
+.sf-menu.main-menu.rtl a.sf-with-ul {
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+.sf-menu.main-menu.sf-navbar a {
+  border: 0;
+}
+.sf-menu.main-menu span.sf-description {
+  color: #13a;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+.sf-menu.main-menu li,
+.sf-menu.main-menu.sf-navbar {
+  background: #095cb1;
+}
+.sf-menu.main-menu li li {
+  background: #0151a4;
+}
+.sf-menu.main-menu li li li {
+  background: #00478f;
+}
+.sf-menu.main-menu li:hover,
+.sf-menu.main-menu li.sfHover,
+.sf-menu.main-menu li.active a,
+.sf-menu.main-menu a:focus,
+.sf-menu.main-menu a:hover,
+.sf-menu.main-menu a:active,
+.sf-menu.main-menu.sf-navbar li li {
+  background: #3270c5;
+  color: #ffea00;
+}
+.sf-menu.main-menu.sf-navbar li ul {
+  background-color: #3270c5;
+}
+.sf-menu.main-menu.sf-navbar li ul li ul {
+  background-color: transparent;
+}
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol,
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+	margin: 0;
+	padding: 0;
+}
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent {
+	font-weight: bold;
+}
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+	display: inline;
+	float: left;
+	width: 12em;
+}
+.sf-menu.main-menu.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+	float: right;
+}
+.sf-menu.main-menu li.sf-parent-children-1 ul.sf-megamenu {
+	width: 12em;
+}
+.sf-menu.main-menu li.sf-parent-children-2 ul.sf-megamenu {
+	width: 24em;
+}
+.sf-menu.main-menu li.sf-parent-children-3 ul.sf-megamenu {
+	width: 36em;
+}
+.sf-menu.main-menu li.sf-parent-children-4 ul.sf-megamenu {
+	width: 48em;
+}
+.sf-menu.main-menu li.sf-parent-children-5 ul.sf-megamenu {
+	width: 60em;
+}
+.sf-menu.main-menu li.sf-parent-children-6 ul.sf-megamenu {
+	width: 72em;
+}
+.sf-menu.main-menu li.sf-parent-children-7 ul.sf-megamenu {
+	width: 84em;
+}
+.sf-menu.main-menu li.sf-parent-children-8 ul.sf-megamenu {
+	width: 96em;
+}
+.sf-menu.main-menu li.sf-parent-children-9 ul.sf-megamenu {
+	width: 108em;
+}
+.sf-menu.main-menu li.sf-parent-children-10 ul.sf-megamenu {
+	width: 120em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** End SuperFish Menu **/
+
+
+

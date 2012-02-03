@@ -8,7 +8,7 @@ background: -ms-linear-gradient(#e9e7db, #ffffff);
 background: -o-linear-gradient(#e9e7db, #ffffff);
 background: linear-gradient(#e9e7db, #ffffff);
 -pie-background: linear-gradient(#e9e7db, #ffffff);
-behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
+behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
 
 #zone-content {z-index:1; background-color:white; border-right:1px solid black; border-left:1px solid black; position:relative; }
@@ -26,12 +26,13 @@ behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
     font-size: 28px*/
 }
 #zone-content h2 {font-size: 13px; }
+
 /* Start quick facts skin as seen http://www.wisc.edu/academics/ */
 .quick-facts {background-color:#F1EDE7; max-width:275px; border: 1px solid #C9AB80; margin-bottom:10px;
     border-radius: 6px; 
     -moz-border-radius: 6px; 
     -webkit-border-radius: 6px;
-    behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
+    behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
 .quick-facts ul {list-style:none; }
 .quick-facts .content {padding-left: 20px; }
@@ -63,7 +64,6 @@ behavior: url(/PIE.htc); /**Fix Path for IE < 9 */
 .block-menu.sidebar-menu li {margin-bottom:8px; margin-left:0; }
 /* End Sidebar Menu */
 
-.section-content .block {margin-top:40px; }
 
 /* Start Breadcrumbs */
 .breadcrumb a:link, .breadcrumb a:visited {color:#B70101; text-decoration:none; }

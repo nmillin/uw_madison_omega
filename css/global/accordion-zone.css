@@ -7,7 +7,7 @@
     background: -o-linear-gradient(#981313, #6E1010);
     background: linear-gradient(#981313, #6E1010);
     -pie-background: linear-gradient(#981313, #6E1010);
-    behavior: url(/PIE.htc); /**Fix path if you want ie < 9 to work **/
+    behavior: url(/sites/all/libraries/PIE/PIE.php); 
     border-bottom:2px solid grey;
 }
 #zone-accordion-wrapper li {float:right; border-left:1px dotted #444444; padding:0 15px; margin:0; }
