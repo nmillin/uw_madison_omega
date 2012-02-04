@@ -54,8 +54,12 @@ to the theme (to get gradients, rounded corners & shadows working) and the IE st
       -Updated the Omega Screenshot for the Theme.  Added the UW Crest where the Omega Logo was.  If someone has better PhotoShop skills they
             could make a sweeter Screenshot.
       -Add CSS for the Breadcrumb & changed the template.php file to change the breadcrumb separator.
-
+      
 -update 1/22/2012 -- Added 2 more skins (sidebar-menu & quick-links).  Blocks have 40px; default padding.
+
+-update 2/2/2012 -- Removed all the CSS for the MegaMenu Module.  Started adding the code for using the SuperFish module as the MegaMenu.
+      The CSS that was used for the MegaMenu was saved in a new CSS file in Global/.
+      -Added the CSS for CSS3PIE.  To have it working you just need to download CSS3PIE to /sites/all/libraries/ & it will work.  (See an example path)
 *******
 Modules
 *******
@@ -67,13 +71,7 @@ Recommended -- will make your life easier
 -Module Filter (drupal.org/project/module_filter) 
 -Menu Attributes (drupal.org/project/menu_attributes) - can add classes to menu items.  This is used to create a menu accordion (see below).
 -Block Class (drupal.org/project/block_class) - can add a class to a block.  Used to skin the blocks (see below).
--MegaMenu to use the dropdowns (http://drupal.org/project/megamenu)
-      -You will find the css started for using the Nice_menus module and the nice_menus.css.
-      In a nice_menu issue (http://drupal.org/node/973500) the maintainer said that they wouldn't add the functionality
-      for the bigger dropdown menu as used in the wisc.edu site.  If you want to use
-      the nice menu module there is a start for you.  The nav does require MegaMenu to
-      have the hover effects & more to work.
-      --**update 1/20/12** - this module isn't required if you don't want a dropdown.  
+-Superfish - Install/Enable if you want dropdowns or MegaMenus.  (This is currently in development.)
 -Omega Tools (for Development) -- Can subtheme Omega fast, and export your theme's updated settings to the .info file.
 -Menu Breadcrumb -- Drupal 7 uses the Main Menu to determine the breadcrumbs, but this module allows you to use the menu the current page
       belongs to.  You will have more fine grain control of the breadcrumb settings.
@@ -95,8 +93,6 @@ Start Readme
 -Make sure the site slogan is set to what you want (if you want one)
 
 -Add the Search Block to the Branding Region (change permissions to let anonymous users use the search)
-
--Add MegaMenu Configuration to your Main Menu **Optional** (See Notes at bottom of ReadMe)
 
 -add a block to a region in the footer zone to get the background color working (Structure > Blocks)
       -By default there are 4 regions in the footer zone.  You can remove regions or resize them
@@ -127,7 +123,7 @@ Start Readme
 
 -Skining Blocks - You will need to install/enable the Block Class module.
       -When you edit/create a block you can now add a class to it.  I have created
-              5 different skins - "quick-facts", "red-links", "quick-links", "sidebar-menu" & "footer-block-skin" (see http://www.wisc.edu/academics/ for an example)
+              4 different skins - "quick-facts", "red-links", "quick-links", & "sidebar-menu" (see http://www.wisc.edu/academics/ for an example)
               -so if you want create a quick-facts block, just add "quick-facts" class (no quotes) in the configure block settings.
               -The CSS for the skins is in content-zone.css.
       -*** If you create more skins let me know so I can add them to the theme. ***
@@ -142,12 +138,13 @@ Start Readme
 
 Future Devolopment for the UW_Madison_Omega Theme:
 -Add some CSS to the Content Region (nothing there right now)
-      -Create more skins for blocks & the content region. --**update** 2 new skins (quick-links & sidebar-menu), but more?
-      -Should the Skins have some default padding???  --**update** .block {margin-top:40px; }
+      -Create more skins for blocks & the content region. 
+      -Should the Skins have some default padding???  --**update** .block {margin-top:40px; } was used, but now removed.
       -Should a Sidebar be Yellow?
-      -How should the breadcrumbs be styled?
+      -How should the breadcrumbs be styled?  --**used red & grey**
       -Should a Menu in the Sidebar be themed like on http://uc.wisc.edu/brand/templates-and-downloads/web/index-no-top-nav/index.html ?  --**update** added sidebar-menu skin
 -Search Block.  Should I try to match wisc.edu exactly or make it better?  Focus/Blur currently.
+-Theme the MegaMenu using the SuperFish module.
 -Demo this at a Meetup (doing so 2/7/12)
 -Drink beer
 
@@ -156,7 +153,10 @@ Any thoughts/ideas???
 
 
 
-
+/**
+ * Please don't use this module.  I will be working on adding the SuperFish functionality to the theme.
+ * This way you can have a MegaMenu and not have to worry about the module being updated.
+ */
 //This is down here because it is very long...
 
 -Add MegaMenu Configuration to your Nav Menu(**Optional, only if you want a MegaMenu**)

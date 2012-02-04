@@ -22,9 +22,8 @@ function uw_madison_omega_form_alter(&$form, &$form_state, $form_id) {
     //$form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty -- Issues...
     
     $form['search_block_form']['#size'] = 30;  // define size of the textfield
-    $form['search_block_form']['#default_value'] = t('Search this site'); // Set a default value for the textfield
-    
-    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search this site';}";
+    $form['search_block_form']['#default_value'] = t('Search this site'); // Set a default value for the textfield  -- change the next two lines to match this value
+    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search this site';}";  //
     $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search this site') {this.value = '';}";
   }
 }

@@ -68,7 +68,7 @@ behavior: url(/sites/all/libraries/PIE/PIE.php);
 /* Start Breadcrumbs */
 .breadcrumb a:link, .breadcrumb a:visited {color:#B70101; text-decoration:none; }
 .breadcrumb a:hover {text-decoration:underline; }
-.breadcrumb {float:right; padding-right:20px; }
+/*.breadcrumb {float:right; padding-right:20px; }*/
 /* End Breadcrumbs */
 
 /***** End Content *****/
