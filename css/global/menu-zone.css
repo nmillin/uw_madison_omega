@@ -10,10 +10,7 @@
     -pie-background: linear-gradient(#AC0608, #ab0907);
     behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
-#zone-menu {   
-    /*
-    min-height:25px;
-    */
+#zone-menu {
     position:relative;
     z-index:6;
     -webkit-box-shadow: #666 0px 2px 3px;
@@ -29,6 +26,7 @@
     -pie-background: linear-gradient(#e8dbca, #dac5a2);
     behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
+
 #region-menu {margin-left:0; margin-right:0; width:960px; }
 
 div.zone-menu li {display:block; float:left; margin-left:0px; margin-right:0px; padding-right:3px; padding-left:3px; }
@@ -43,7 +41,7 @@ div.zone-menu  a {
 .zone-menu li {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
 .zone-menu li.first {border-left:none; }
 .zone-menu li.last {border-right:1px solid #ae9779; }
-.zone-menu li:hover, .zone-menu  li.active {
+.zone-menu li:hover, .zone-menu  li.active-trail {
     background: #efe6da;
     background: -webkit-gradient(linear, 0 0, 0 bottom, from(#efe6da), to(#e5d7be));
     background: -webkit-linear-gradient(#efe6da, #e5d7be);
@@ -55,60 +53,19 @@ div.zone-menu  a {
     behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
 
-
-
-
-
-
-
-
 /** Start SuperFish Menu -- Code needs to be configured for UW Madison's Mega Menu.  Taken from Blue.css in libraries/Superfish/styles **/
-/* 
-.sf-menu.main-menu {
-  float: left;
-  margin-bottom: 1em;
-  padding: 0;
-}
-.sf-menu.main-menu.sf-navbar {
-  width: 100%;
-}
-.sf-menu.main-menu ul {
-  padding-left: 0;
-}
-.sf-menu.main-menu a {
-  border: 1px outset #003973;
-  color: #ffffff;
-  padding: 0.75em 1em;
-  white-space: nowrap;
-}
-.sf-menu.main-menu a.sf-with-ul {
-  padding-right: 2.25em;
-}
-.sf-menu.main-menu.rtl a.sf-with-ul {
-  padding-left: 2.25em;
-  padding-right: 1em;
-}
-.sf-menu.main-menu.sf-navbar a {
-  border: 0;
-}
-.sf-menu.main-menu span.sf-description {
-  color: #13a;
-  display: block;
-  font-size: 0.8em;
-  line-height: 1.5em;
-  margin: 5px 0 0 5px;
-  padding: 0;
-}
-.sf-menu.main-menu li,
-.sf-menu.main-menu.sf-navbar {
-  background: #095cb1;
-}
-.sf-menu.main-menu li li {
-  background: #0151a4;
-}
-.sf-menu.main-menu li li li {
-  background: #00478f;
-}
+
+.sf-menu.main-menu ul {padding: 0 15px 10px 0; }
+.sf-menu.main-menu a {color:#b80404; padding:0 25px; font-size:12px; line-height:25px; font-weight:bold; font-family: "Lucia Grande", "Lucida Sans Unicode", arial, sans-serif; }
+.sf-menu.main-menu li{text-transform:uppercase; border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
+.sf-menu.main-menu li.first {border-left:none; }
+.sf-menu.main-menu li.last {border-right:1px solid #ae9779;}
+.sf-menu.main-menu li li, .sf-menu.main-menu li li.last {background: #F0E7D8; border:none; text-transform:none; opacity:.95; }
+.sf-menu.main-menu li li a:hover {background:#F0E7D8; }
+.sf-menu.main-menu li li:hover {background:#F0E7D8; }
+
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {top:26px; }
+
 .sf-menu.main-menu li:hover,
 .sf-menu.main-menu li.sfHover,
 .sf-menu.main-menu li.active a,
@@ -116,63 +73,47 @@ div.zone-menu  a {
 .sf-menu.main-menu a:hover,
 .sf-menu.main-menu a:active,
 .sf-menu.main-menu.sf-navbar li li {
-  background: #3270c5;
-  color: #ffea00;
-}
-.sf-menu.main-menu.sf-navbar li ul {
-  background-color: #3270c5;
-}
-.sf-menu.main-menu.sf-navbar li ul li ul {
-  background-color: transparent;
-}
-.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol,
-.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li {
-	margin: 0;
-	padding: 0;
-}
-.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent {
-	font-weight: bold;
-}
-.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
-	display: inline;
-	float: left;
-	width: 12em;
-}
-.sf-menu.main-menu.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
-	float: right;
-}
-.sf-menu.main-menu li.sf-parent-children-1 ul.sf-megamenu {
-	width: 12em;
-}
-.sf-menu.main-menu li.sf-parent-children-2 ul.sf-megamenu {
-	width: 24em;
-}
-.sf-menu.main-menu li.sf-parent-children-3 ul.sf-megamenu {
-	width: 36em;
-}
-.sf-menu.main-menu li.sf-parent-children-4 ul.sf-megamenu {
-	width: 48em;
-}
-.sf-menu.main-menu li.sf-parent-children-5 ul.sf-megamenu {
-	width: 60em;
-}
-.sf-menu.main-menu li.sf-parent-children-6 ul.sf-megamenu {
-	width: 72em;
-}
-.sf-menu.main-menu li.sf-parent-children-7 ul.sf-megamenu {
-	width: 84em;
-}
-.sf-menu.main-menu li.sf-parent-children-8 ul.sf-megamenu {
-	width: 96em;
-}
-.sf-menu.main-menu li.sf-parent-children-9 ul.sf-megamenu {
-	width: 108em;
-}
-.sf-menu.main-menu li.sf-parent-children-10 ul.sf-megamenu {
-	width: 120em;
+    background: #efe6da;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#efe6da), to(#e5d7be));
+    background: -webkit-linear-gradient(#efe6da, #e5d7be);
+    background: -moz-linear-gradient(#efe6da, #e5d7be);
+    background: -ms-linear-gradient(#efe6da, #e5d7be);
+    background: -o-linear-gradient(#efe6da, #e5d7be);
+    background: linear-gradient(#efe6da, #e5d7be);
+    -pie-background: linear-gradient(#efe6da, #e5d7be);
+    behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
 
+/** MegaMenu Title **/
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper li a {font-weight:bold; color:black; }
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper a:hover {color:#B70101; background-color:#D1BD98; }
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper .sf-menu-column:hover {background-color:orange; }
 
+/** MegaMenu Children **/
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper li li a {font-weight: normal; color:#B70101; }
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper li li a:hover {background-color:#D1BD98;}
+
+/** Columns **/
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column, .sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-no-children { display: inline; float: left; width:175px; padding:15px 0 10px 15px; }
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li li.sf-no-children {padding:0;}
+
+/** Column Widths */
+.sf-menu.main-menu li.sf-total-children-2 ul.sf-megamenu {width: 200px; }
+.sf-menu.main-menu li.sf-total-children-3 ul.sf-megamenu {width: 410px;}
+.sf-menu.main-menu li.sf-total-children-4 ul.sf-megamenu {width: 570px;}
+
+/**
+ * Column Widths if you don't want the Read More functionality 
+ */
+/*.sf-menu.main-menu li.sf-total-children-2 ul.sf-megamenu {width: 405px; }
+.sf-menu.main-menu li.sf-total-children-3 ul.sf-megamenu {width: 570px;}
+.sf-menu.main-menu li.sf-total-children-4 ul.sf-megamenu {width: 765px;}*/
+
+/** Read More links -- Comment out section & uncomment column widths if you don't want this functionality**/
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.last {float:right; text-align:right; width:100px; color:#B70101; font-weight:bold; }
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.last a {color:#B70101; font-weight:bold; }
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol ol li.last {float:left; text-align:left; width:175px; font-weight:normal; }
+.sf-menu.main-menu ul.sf-megamenu li.sf-megamenu-wrapper ol ol li.last a {font-weight:normal; }
 
 
 
