@@ -11,4 +11,5 @@ background: linear-gradient(#9a0002, #670003);
 behavior: url(/sites/all/libraries/PIE/PIE.php); 
 }
 
+.zone-header {background-color:#B70101; }
 /***** End Header *****/
