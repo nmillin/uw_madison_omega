@@ -33,7 +33,7 @@ div.zone-menu li {display:block; float:left; margin-left:0px; margin-right:0px; 
 div.zone-menu a:link, .zone-menu a:visited {text-decoration:none; }
 div.zone-menu  a {
     color:#b80404;
-    padding:0 10px 0;
+    padding:0 25px;
     font-size:14px;
     line-height:25px;
 }

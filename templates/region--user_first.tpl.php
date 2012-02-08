@@ -11,7 +11,8 @@
 
 <div<?php print $attributes; ?>>
   <div<?php print $content_attributes; ?>>
-    <a href="http://www.wisc.edu/" title="Go to Wisc.edu"><img src="/sites/all/themes/uw_madison_omega/images/wordmark.gif" alt="University of Wisconsin-Madison" /></a>
+    <a href="http://www.wisc.edu/" title="Go to Wisc.edu"><img src="/sites/all/libraries/uw_madison_omega/wordmark.gif" alt="University of Wisconsin-Madison" /></a>
+    <!--a href="http://www.wisc.edu/" title="Go to Wisc.edu"><img src="http://www.uc.wisc.edu/images/wordmark.gif" alt="University of Wisconsin-Madison Crest" /></a>-->
     <?php print $content; ?>
   </div>
 </div>
