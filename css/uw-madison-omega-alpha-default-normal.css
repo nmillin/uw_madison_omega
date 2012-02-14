@@ -17,7 +17,10 @@
 
 /** Start branding zone **/
 h1.site-name, h2.site-name {font-size:40px; }
-.block-search {padding:33px 0 0 0; margin-top:0; }
+.branding-data {float:left; }
+.logo-img {display:inline; }
+.site-name {line-height:1.5em; }
+.block-search {padding:33px 10px 0 0; float:right; margin-top:0px; }
 /** End branding zone **/
 
 /** Start Main Menu zone **/

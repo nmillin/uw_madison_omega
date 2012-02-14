@@ -20,7 +20,7 @@
 .logo-img {display:inline; margin-right:10px; }
 .branding-data {float:left; }
 h1.site-name, h2.site-name {font-size:40px; margin-top:25px; line-height:1em; }
-.block-search {float:right; padding:0px 10px 0 0; margin-top:-24px; position:relative; }
+.block-search {float:right; padding:0px 10px 0 0; margin-top:-20px; }
 
 /** End branding zone **/
 

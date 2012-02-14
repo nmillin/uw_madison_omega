@@ -1,4 +1,11 @@
 /* This file will hold styles that are loaded using the same media query as the narrow grid. */
+
+/**
+ * Basically this stylesheet will be loaded before the narrow.css file
+ * and before the normal.css file
+ * and the wide.css file.
+ * It will be loaded 3 times if a wide display is viewing the page.
+ */
 /****** Start Global *****/
 
 /***** End Global *****/
@@ -10,9 +17,7 @@
 /**End user zone **/
 
 /** Start branding zone **/
-.logo-img {display:inline; }
-.site-name {line-height:1.5em; }
-.block-search {float:right; padding:0px 10px 0 0; margin-top:-24px; position:relative; }
+
 /** End branding zone **/
 
 /** Start Main Menu zone **/
