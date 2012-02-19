@@ -13,3 +13,5 @@ h6.site-slogan {font-size:14px; color:#c6bd88; letter-spacing:1px; }
 #zone-branding-wrapper {padding-top:7px; }
 
 .block-search {padding:9px 0px 0px 0px; margin-bottom:10px; }
+
+*:first-child+html #block-search-form {margin-top:-10px; }/**ie7 hack **/

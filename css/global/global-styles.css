@@ -11,6 +11,13 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
 }
 
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
 ul li.leaf {list-style:none;}
 
 a:link, a:visited {color:#B70101; text-decoration:none; }

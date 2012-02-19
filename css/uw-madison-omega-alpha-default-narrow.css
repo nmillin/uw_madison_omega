@@ -1,3 +1,5 @@
+@import url("/sites/all/libraries/uw_madison_omega/custom-narrow.css");
+
 /* This file will hold styles that are loaded using the same media query as the narrow grid. */
 
 /****** Start Global *****/
@@ -26,7 +28,7 @@ h1.site-name, h2.site-name {font-size:40px; margin-top:25px; line-height:1em; }
 
 /** Start Main Menu zone **/
 #zone-menu-wrapper {margin-top:0px; }
-
+div.zone-menu li {float:left; border-top:none; border-bottom:none; padding-top:0px; padding-bottom:0px; font-size:13px; }
 
 .megamenu-skin-uw-madison .megamenu-parent-title a { padding:0 6px 0; font-size:13px; }
 /** End Main Menu zone **/

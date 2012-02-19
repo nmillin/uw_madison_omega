@@ -28,14 +28,14 @@
 }
 
 #region-menu {margin-left:0; margin-right:0; width:960px; }
-
-div.zone-menu li {display:block; float:left; margin-left:0px; margin-right:0px; padding-right:3px; padding-left:3px; }
+.zone-menu ul {margin-bottom:0; }
+div.zone-menu li {display:block; /*float:left;*/ border-bottom:1px solid #9A0002; /*padding-top:4px; padding-bottom:4px; font-size:16px; /*end edits*/ margin-left:0px; margin-right:0px;  }
 div.zone-menu a:link, .zone-menu a:visited {text-decoration:none; }
 div.zone-menu  a {
     color:#b80404;
-    padding:0 25px;
+    padding:5px 25px; display:block;  
     font-size:14px;
-    line-height:25px;
+    /*line-height:25px;*/
 }
 .zone-menu li {text-transform:uppercase; }
 .zone-menu li {border-right:1px solid #f3ece2; border-left:1px solid #ae9779; }
